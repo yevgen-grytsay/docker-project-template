@@ -1,8 +1,15 @@
 
-## Known bugs
+# Docker Project Template
 
-* Xdebug не включается автоматически, надо заходить в контейнер и запускать `docker-php-ext-enable xdebug` вручную.
-  Возможно это происходит из-за ошибки `pecl install xdebug-2.9.8`.
+
+## Adminer
+[http://localhost:8080](http://localhost:8080)
+
+
+## Known bugs PHP 7.2
+
+* Щоб увімкнути Xdebug, треба зайти в контейнер і виконати `docker-php-ext-enable xdebug`.
+  Можливо це спричинено помилкою, яка виникає в процесі інсталяції Xdebug `pecl install xdebug-2.9.8`.
   
   ```
   RUN pecl install xdebug-2.9.8 \
